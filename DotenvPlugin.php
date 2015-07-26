@@ -12,8 +12,13 @@ class DotenvPlugin implements PluginInterface, EventSubscriberInterface
 {
     public function activate(Composer $composer, IOInterface $io)
     {
-        $dotenv = new Dotenv(dirname(__DIR__));
-        $dotenv->load();
+        try {
+            $dotenv = new Dotenv(dirname(__DIR__));
+            $dotenv->load();
+        }
+        catch (\InvalidArgumentException $e) {
+
+        }
     }
 
     public static function getSubscribedEvents()
