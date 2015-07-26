@@ -11,6 +11,9 @@
         }
     },
     "extra": {
-        "class": "Bangpound\\Composer\\DotenvPlugin"
+        "class": "Bangpound\\Composer\\DotenvPlugin",
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
     }
 }
