@@ -13,11 +13,10 @@ class DotenvPlugin implements PluginInterface, EventSubscriberInterface
     public function activate(Composer $composer, IOInterface $io)
     {
         try {
-            $dotenv = new Dotenv(dirname(__DIR__));
+            $dotenv = new Dotenv(getcwd());
             $dotenv->load();
         }
         catch (\InvalidArgumentException $e) {
-
         }
     }
 
