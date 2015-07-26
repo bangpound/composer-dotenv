@@ -1,0 +1,16 @@
+{
+    "name": "bangpound/composer-dotenv",
+    "type": "composer-plugin",
+    "require": {
+        "composer-plugin-api": "^1.0",
+        "vlucas/phpdotenv": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bangpound\\Composer\\": ""
+        }
+    },
+    "extra": {
+        "class": "Bangpound\\Composer\\DotenvPlugin"
+    }
+}
