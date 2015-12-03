@@ -1,5 +1,6 @@
 {
     "name": "bangpound/composer-dotenv",
+    "description": "Load environment variables from `.env` when Composer runs",
     "type": "composer-plugin",
     "require": {
         "composer-plugin-api": "^1.0",
