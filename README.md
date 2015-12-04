@@ -56,7 +56,6 @@ parameters:
     secret: 123456
 ```
 
-## Missing stuff
+## Settings
 
-Dotenv allows you to load a configuration file regardless of its name or directory. This plugin currently assumes that
-`.env` is adjacent to `composer.json`.
+In the `extra` property of the root repository, specify the
