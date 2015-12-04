@@ -3,12 +3,11 @@
 namespace Bangpound\Composer;
 
 use Composer\Composer;
-use Composer\EventDispatcher\EventSubscriberInterface;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
 use Dotenv\Dotenv;
 
-class DotenvPlugin implements PluginInterface, EventSubscriberInterface
+class DotenvPlugin implements PluginInterface
 {
     public function activate(Composer $composer, IOInterface $io)
     {
@@ -18,10 +17,5 @@ class DotenvPlugin implements PluginInterface, EventSubscriberInterface
         }
         catch (\InvalidArgumentException $e) {
         }
-    }
-
-    public static function getSubscribedEvents()
-    {
-        return array();
     }
 }
