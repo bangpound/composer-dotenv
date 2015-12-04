@@ -14,8 +14,7 @@ class DotenvPlugin implements PluginInterface
         try {
             $dotenv = new Dotenv(getcwd());
             $dotenv->load();
-        }
-        catch (\InvalidArgumentException $e) {
+        } catch (\InvalidArgumentException $e) {
         }
     }
 }
