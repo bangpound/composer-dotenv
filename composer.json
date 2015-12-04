@@ -6,6 +6,9 @@
         "composer-plugin-api": "^1.0",
         "vlucas/phpdotenv": "~2.0"
     },
+    "require-dev": {
+        "composer/composer": "~1.0@dev"
+    },
     "autoload": {
         "psr-4": {
             "Bangpound\\Composer\\": ""
