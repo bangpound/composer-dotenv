@@ -58,4 +58,15 @@ parameters:
 
 ## Settings
 
-In the `extra` property of the root repository, specify the
+In the `extra` property of the root repository, change these values as necessary:
+
+```json
+{
+    "extra": {
+        "dotenv": {
+            "path": ".",
+            "file": ".env"
+        }
+    }
+}
+```
