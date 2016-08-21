@@ -5,7 +5,7 @@ Whenever Composer is activated in a project with a `.env` file, this plugin will
 file into the PHP envrionment.
 
 This plugin works well with `incenteev/composer-parameter-handler`
-[which allows you to map environment variables to parameters.][incenteev]. *This* plugin runs when composer
+[which allows you to map environment variables to parameters][incenteev]. *This* plugin runs when composer
 is activated, and ParameterHandler finds that configuration in the environment after your dependencies
 have been installed or updated.
 
